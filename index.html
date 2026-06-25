@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сайт недоступен</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+    }
+    .box {
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Сайт ещё не открыт</h1>
+    <p>Доступ появится после 28 июня 2026 в 17:00</p>
+  </div>
+
+  <script>
+    // 📅 ДАТА ОТКРЫТИЯ (28 июня 2026, 17:00 по локальному времени пользователя)
+    const unlockDate = new Date("2026-06-28T17:00:00").getTime();
+
+    // 🔗 СЮДА ВСТАВИШЬ ССЫЛКУ ПОСЛЕ ОТКРЫТИЯ
+    const targetUrl = "PASTE_YOUR_LINK_HERE";
+
+    const now = new Date().getTime();
+
+    if (now >= unlockDate) {
+      window.location.replace(targetUrl);
+    }
+  </script>
+</body>
+</html>
